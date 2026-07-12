@@ -1,0 +1,608 @@
+[
+  {
+    "id": 1001,
+    "version": 1,
+    "target_type": "category",
+    "target_id": "quesos_pasta_blanda",
+    "condition": {
+      "attribute": "pasteurizado",
+      "operator": "==",
+      "value": false,
+      "if_unknown": "assume_worst"
+    },
+    "verdict": "avoid",
+    "explanation": {
+      "es": "Mejor déjalo para después — riesgo de listeria si no está pasteurizado.",
+      "en": "Better leave it for later — listeria risk if unpasteurised."
+    },
+    "caution_note": {
+      "es": "Seguro si está pasteurizado — compruébalo en la etiqueta",
+      "en": "Safe if pasteurised — check the label"
+    },
+    "factor_label": {
+      "es": "Factor detectado: listeria en producto sin pasteurizar",
+      "en": "Factor found: listeria in unpasteurised product"
+    },
+    "safe_alternatives": {
+      "es": [
+        "Queso curado",
+        "Queso pasteurizado",
+        "Requesón",
+        "Queso fundido"
+      ],
+      "en": [
+        "Aged cheese",
+        "Pasteurised cheese",
+        "Ricotta",
+        "Processed cheese"
+      ]
+    },
+    "source_org": "AESAN",
+    "source_url": "https://www.aesan.gob.es/AECOSAN/web/para_el_consumidor/ampliacion/embarazadas.htm",
+    "active": true,
+    "education": {
+      "es": "La listeria es una bacteria que puede vivir en lácteos sin pasteurizar y, en el embarazo, atravesar la placenta. La pasteurización (calentar la leche) la elimina por completo — por eso el mismo queso puede ser seguro o no según cómo se hizo.",
+      "en": "Listeria is a bacterium that can live in unpasteurised dairy and, during pregnancy, cross the placenta. Pasteurisation (heating the milk) kills it completely — that's why the same cheese can be safe or not depending on how it was made."
+    }
+  },
+  {
+    "id": 1002,
+    "version": 1,
+    "target_type": "category",
+    "target_id": "quesos_pasta_blanda",
+    "condition": {
+      "attribute": "pasteurizado",
+      "operator": "==",
+      "value": true
+    },
+    "verdict": "safe",
+    "explanation": {
+      "es": "Pasteurizado: sin riesgo de listeria durante el embarazo.",
+      "en": "Pasteurised: no listeria risk during pregnancy."
+    },
+    "source_org": "AESAN",
+    "source_url": "https://www.aesan.gob.es/AECOSAN/web/para_el_consumidor/ampliacion/embarazadas.htm",
+    "active": true,
+    "education": {
+      "es": "La pasteurización elimina la listeria: un queso de pasta blanda hecho con leche pasteurizada no tiene ese riesgo. Búscalo en la etiqueta: «leche pasteurizada».",
+      "en": "Pasteurisation kills listeria: a soft cheese made with pasteurised milk doesn't carry that risk. Look for 'pasteurised milk' on the label."
+    }
+  },
+  {
+    "id": 1003,
+    "version": 1,
+    "target_type": "category",
+    "target_id": "lacteos",
+    "condition": {
+      "attribute": "pasteurizado",
+      "operator": "==",
+      "value": true
+    },
+    "verdict": "safe",
+    "explanation": {
+      "es": "Seguro. Pasteurizado, sin riesgo durante el embarazo.",
+      "en": "Safe. Pasteurised, no risk during pregnancy."
+    },
+    "source_org": "AESAN",
+    "source_url": "https://www.aesan.gob.es/AECOSAN/web/para_el_consumidor/ampliacion/embarazadas.htm",
+    "active": true,
+    "education": {
+      "es": "Los lácteos pasteurizados son de los alimentos más seguros del embarazo, y además aportan calcio, que tu bebé usa para formar sus huesos.",
+      "en": "Pasteurised dairy is among the safest pregnancy foods, and it provides calcium your baby uses to build bones."
+    }
+  },
+  {
+    "id": 1010,
+    "version": 1,
+    "target_type": "category",
+    "target_id": "pescado_crudo",
+    "condition": null,
+    "verdict": "avoid",
+    "explanation": {
+      "es": "Pescado crudo — mejor cocinado durante el embarazo.",
+      "en": "Raw fish — better cooked during pregnancy."
+    },
+    "factor_label": {
+      "es": "Factor detectado: anisakis y listeria en pescado crudo",
+      "en": "Factor found: anisakis and listeria in raw fish"
+    },
+    "safe_alternatives": {
+      "es": [
+        "Pescado bien cocinado",
+        "Sushi de verduras",
+        "Pescado a la plancha",
+        "Mejillones al vapor"
+      ],
+      "en": [
+        "Well-cooked fish",
+        "Vegetable sushi",
+        "Grilled fish",
+        "Steamed mussels"
+      ]
+    },
+    "source_org": "AESAN",
+    "source_url": "https://www.aesan.gob.es/AECOSAN/web/para_el_consumidor/ampliacion/embarazadas.htm",
+    "active": true,
+    "education": {
+      "es": "El pescado crudo puede llevar anisakis y listeria. El calor los elimina: el mismo salmón que evitas en sushi es perfecto a la plancha. Congelar a -20 °C 5 días también mata el anisakis (no la listeria).",
+      "en": "Raw fish can carry anisakis and listeria. Heat kills both: the same salmon you skip as sushi is perfect grilled. Freezing at -20 °C for 5 days also kills anisakis (not listeria)."
+    }
+  },
+  {
+    "id": 1011,
+    "version": 1,
+    "target_type": "category",
+    "target_id": "pescado_ahumado",
+    "condition": null,
+    "verdict": "avoid",
+    "explanation": {
+      "es": "Ahumado en frío: riesgo de listeria. Mejor cocinado.",
+      "en": "Cold-smoked: listeria risk. Better cooked."
+    },
+    "factor_label": {
+      "es": "Factor detectado: listeria en ahumados refrigerados",
+      "en": "Factor found: listeria in chilled smoked products"
+    },
+    "safe_alternatives": {
+      "es": [
+        "Salmón a la plancha",
+        "Pescado al horno",
+        "Atún en conserva",
+        "Merluza cocida"
+      ],
+      "en": [
+        "Grilled salmon",
+        "Baked fish",
+        "Canned tuna",
+        "Boiled hake"
+      ]
+    },
+    "source_org": "AESAN",
+    "source_url": "https://www.aesan.gob.es/AECOSAN/web/para_el_consumidor/ampliacion/embarazadas.htm",
+    "active": true,
+    "education": {
+      "es": "El ahumado en frío no calienta el pescado lo suficiente para eliminar la listeria, y este tipo de producto se conserva mucho tiempo en frío, donde la bacteria sí crece. Cocinado (a más de 75 °C) es seguro.",
+      "en": "Cold-smoking doesn't heat fish enough to kill listeria, and these products sit chilled a long time, where the bacterium does grow. Cooked above 75 °C it's safe."
+    }
+  },
+  {
+    "id": 1012,
+    "version": 1,
+    "target_type": "category",
+    "target_id": "embutidos_curados",
+    "condition": null,
+    "verdict": "caution",
+    "explanation": {
+      "es": "Embutido curado: congélalo 4 días antes por la toxoplasmosis.",
+      "en": "Cured meat: freeze it 4 days first for toxoplasmosis."
+    },
+    "caution_note": {
+      "es": "Seguro cocinado o tras congelarlo 4 días a -18 °C",
+      "en": "Safe cooked, or after freezing 4 days at -18 °C"
+    },
+    "factor_label": {
+      "es": "Factor detectado: toxoplasma en curados no cocidos",
+      "en": "Factor found: toxoplasma in uncooked cured meat"
+    },
+    "safe_alternatives": {
+      "es": [
+        "Jamón cocido",
+        "Pavo cocido",
+        "Embutido cocinado",
+        "Jamón congelado 4 días"
+      ],
+      "en": [
+        "Cooked ham",
+        "Cooked turkey",
+        "Cooked sausage",
+        "Ham frozen 4 days"
+      ]
+    },
+    "source_org": "AESAN",
+    "source_url": "https://www.aesan.gob.es/AECOSAN/web/para_el_consumidor/ampliacion/embarazadas.htm",
+    "active": true,
+    "education": {
+      "es": "El toxoplasma es un parásito que puede estar en carne curada no cocinada. Congelar el embutido 4 días a -18 °C lo inactiva, y cocinarlo también. Si ya pasaste la toxoplasmosis (te lo dice tu serología), este riesgo no te aplica.",
+      "en": "Toxoplasma is a parasite that can survive in uncooked cured meat. Freezing it 4 days at -18 °C inactivates it, and so does cooking. If you've already had toxoplasmosis (your blood test shows it), this risk doesn't apply to you."
+    }
+  },
+  {
+    "id": 1013,
+    "version": 1,
+    "target_type": "category",
+    "target_id": "quesos_curados",
+    "condition": null,
+    "verdict": "safe",
+    "explanation": {
+      "es": "Curado y de pasta dura: seguro.",
+      "en": "Aged, hard cheese: safe."
+    },
+    "source_org": "AESAN",
+    "source_url": "https://www.aesan.gob.es/AECOSAN/web/para_el_consumidor/ampliacion/embarazadas.htm",
+    "active": true,
+    "education": {
+      "es": "La curación larga (meses de sal y secado) hace el queso demasiado seco y ácido para la listeria. Cuanto más curado y duro, más seguro.",
+      "en": "Long ageing (months of salt and drying) makes cheese too dry and acidic for listeria. The harder and more aged, the safer."
+    }
+  },
+  {
+    "id": 1014,
+    "version": 1,
+    "target_type": "category",
+    "target_id": "marisco_cocinado",
+    "condition": null,
+    "verdict": "safe",
+    "explanation": {
+      "es": "Bien cocinados: seguros.",
+      "en": "Well cooked: safe."
+    },
+    "source_org": "AESAN",
+    "source_url": "https://www.aesan.gob.es/AECOSAN/web/para_el_consumidor/ampliacion/embarazadas.htm",
+    "active": true,
+    "education": {
+      "es": "El calor de la cocción completa elimina bacterias y virus del marisco. La clave es que esté bien hecho, no crudo ni «al punto».",
+      "en": "Full cooking heat kills bacteria and viruses in shellfish. The key is well done — not raw or rare."
+    }
+  },
+  {
+    "id": 1020,
+    "version": 1,
+    "target_type": "attribute",
+    "target_id": "mercurio",
+    "condition": {
+      "attribute": "mercurio",
+      "operator": "==",
+      "value": "alto"
+    },
+    "verdict": "avoid",
+    "explanation": {
+      "es": "Pescado grande con mercurio alto — mejor déjalo para después del embarazo.",
+      "en": "Large fish, high in mercury — better leave it for after pregnancy."
+    },
+    "factor_label": {
+      "es": "Factor detectado: metilmercurio en grandes depredadores",
+      "en": "Factor found: methylmercury in large predators"
+    },
+    "safe_alternatives": {
+      "es": [
+        "Merluza",
+        "Sardinas",
+        "Boquerones cocinados",
+        "Salmón cocinado"
+      ],
+      "en": [
+        "Hake",
+        "Sardines",
+        "Cooked anchovies",
+        "Cooked salmon"
+      ]
+    },
+    "source_org": "AESAN",
+    "source_url": "https://www.aesan.gob.es/AECOSAN/web/para_el_consumidor/ampliacion/embarazadas.htm",
+    "active": true,
+    "education": {
+      "es": "Los peces grandes y longevos (pez espada, atún rojo, tiburón) acumulan metilmercurio de todo lo que comen durante años. El mercurio puede afectar al sistema nervioso del bebé en desarrollo, por eso AESAN recomienda evitarlos en el embarazo.",
+      "en": "Large, long-lived fish (swordfish, bluefin tuna, shark) accumulate methylmercury from years of feeding. Mercury can affect a developing baby's nervous system, which is why food agencies advise avoiding them in pregnancy."
+    }
+  },
+  {
+    "id": 1021,
+    "version": 1,
+    "target_type": "attribute",
+    "target_id": "mercurio",
+    "condition": {
+      "attribute": "mercurio",
+      "operator": "==",
+      "value": "moderado"
+    },
+    "verdict": "caution",
+    "explanation": {
+      "es": "Con moderación — máx. 2 latas a la semana por el mercurio.",
+      "en": "In moderation — max 2 tins a week due to mercury."
+    },
+    "caution_note": {
+      "es": "Máx. 2 latas a la semana",
+      "en": "Max 2 tins a week"
+    },
+    "factor_label": {
+      "es": "Factor detectado: mercurio moderado (atún)",
+      "en": "Factor found: moderate mercury (tuna)"
+    },
+    "safe_alternatives": {
+      "es": [
+        "Sardinas en lata",
+        "Caballa en conserva",
+        "Merluza",
+        "Mejillones al vapor"
+      ],
+      "en": [
+        "Canned sardines",
+        "Canned mackerel",
+        "Hake",
+        "Steamed mussels"
+      ]
+    },
+    "source_org": "AESAN",
+    "source_url": "https://www.aesan.gob.es/AECOSAN/web/para_el_consumidor/ampliacion/embarazadas.htm",
+    "active": true,
+    "education": {
+      "es": "El atún acumula algo de mercurio, pero mucho menos que los grandes depredadores. Por eso no es «evitar» sino «con medida»: hasta 2 latas por semana entra en lo que AESAN considera seguro.",
+      "en": "Tuna accumulates some mercury, but far less than big predators. That's why it's 'in moderation' rather than 'avoid': up to 2 tins a week is within what agencies consider safe."
+    }
+  },
+  {
+    "id": 1030,
+    "version": 1,
+    "target_type": "attribute",
+    "target_id": "contiene_alcohol",
+    "condition": {
+      "attribute": "contiene_alcohol",
+      "operator": "==",
+      "value": true
+    },
+    "verdict": "avoid",
+    "explanation": {
+      "es": "Contiene alcohol: no hay cantidad segura durante el embarazo.",
+      "en": "Contains alcohol: there is no safe amount during pregnancy."
+    },
+    "factor_label": {
+      "es": "Factor detectado: alcohol (sin umbral seguro)",
+      "en": "Factor found: alcohol (no safe threshold)"
+    },
+    "safe_alternatives": {
+      "es": [
+        "Cerveza 0,0",
+        "Agua con gas y limón",
+        "Mosto",
+        "Kombucha sin alcohol"
+      ],
+      "en": [
+        "0.0 beer",
+        "Sparkling water with lemon",
+        "Grape juice",
+        "Alcohol-free kombucha"
+      ]
+    },
+    "source_org": "OMS",
+    "source_url": "https://www.who.int/es/news-room/fact-sheets/detail/alcohol",
+    "active": true,
+    "education": {
+      "es": "El alcohol pasa directamente al bebé por la placenta y su hígado no puede procesarlo. No se conoce ninguna cantidad segura, por eso la recomendación es cero durante todo el embarazo — también en salsas y postres.",
+      "en": "Alcohol passes straight to the baby through the placenta, and their liver can't process it. No safe amount is known, which is why the advice is zero throughout pregnancy — sauces and desserts included."
+    }
+  },
+  {
+    "id": 1031,
+    "version": 1,
+    "target_type": "attribute",
+    "target_id": "huevo_crudo",
+    "condition": {
+      "attribute": "huevo_crudo",
+      "operator": "==",
+      "value": true
+    },
+    "verdict": "avoid",
+    "explanation": {
+      "es": "Huevo poco hecho — cuájala bien.",
+      "en": "Undercooked egg — cook it through."
+    },
+    "factor_label": {
+      "es": "Factor detectado: salmonela en huevo crudo o poco hecho",
+      "en": "Factor found: salmonella in raw or undercooked egg"
+    },
+    "safe_alternatives": {
+      "es": [
+        "Tortilla bien cuajada",
+        "Huevo duro",
+        "Revuelto bien hecho",
+        "Mayonesa pasteurizada"
+      ],
+      "en": [
+        "Well-set omelette",
+        "Hard-boiled egg",
+        "Well-cooked scramble",
+        "Pasteurised mayo"
+      ]
+    },
+    "source_org": "AESAN",
+    "source_url": "https://www.aesan.gob.es/AECOSAN/web/para_el_consumidor/ampliacion/embarazadas.htm",
+    "active": true,
+    "education": {
+      "es": "La salmonela vive en el huevo crudo y muere al cocinarlo del todo. Tortillas cuajadas, huevos duros y mayonesas pasteurizadas: sí. Masas crudas y salsas caseras con huevo: mejor no.",
+      "en": "Salmonella lives in raw egg and dies with thorough cooking. Set omelettes, hard-boiled eggs and pasteurised mayo: yes. Raw dough and homemade egg sauces: better not."
+    }
+  },
+  {
+    "id": 1040,
+    "version": 1,
+    "target_type": "attribute",
+    "target_id": "contiene_cafeina",
+    "condition": {
+      "attribute": "contiene_cafeina",
+      "operator": "==",
+      "value": true
+    },
+    "verdict": "caffeine",
+    "explanation": {
+      "es": "Suma {mg} mg de cafeína. Puedes tomarlo dentro de tu límite.",
+      "en": "Adds {mg} mg of caffeine. Fine within your daily limit."
+    },
+    "caution_note": {
+      "es": "Cuenta para tu límite de 200 mg al día",
+      "en": "Counts toward your 200 mg daily limit"
+    },
+    "safe_alternatives": {
+      "es": [
+        "Descafeinado",
+        "Infusión de rooibos",
+        "Agua con gas",
+        "Zumo natural"
+      ],
+      "en": [
+        "Decaf",
+        "Rooibos infusion",
+        "Sparkling water",
+        "Fresh juice"
+      ]
+    },
+    "source_org": "EFSA",
+    "source_url": "https://www.efsa.europa.eu/en/efsajournal/pub/4102",
+    "active": true,
+    "education": {
+      "es": "La cafeína cruza la placenta y el bebé la elimina muy despacio. EFSA sitúa el límite seguro en 200 mg al día — unos dos cafés. No hace falta dejarlo: hace falta contarlo. Ojo con colas, té y chocolate, que también suman.",
+      "en": "Caffeine crosses the placenta and babies clear it very slowly. EFSA puts the safe limit at 200 mg a day — about two coffees. You don't need to quit: you need to count. Watch colas, tea and chocolate, they add up too."
+    }
+  },
+  {
+    "id": 2001,
+    "version": 1,
+    "target_type": "attribute",
+    "target_id": "contiene_retinol",
+    "condition": {
+      "attribute": "contiene_retinol",
+      "operator": "==",
+      "value": true
+    },
+    "verdict": "avoid",
+    "explanation": {
+      "es": "Contiene retinol (vitamina A) — mejor déjalo para después del embarazo.",
+      "en": "Contains retinol (vitamin A) — better leave it for after pregnancy."
+    },
+    "factor_label": {
+      "es": "Factor detectado: retinoides de uso tópico",
+      "en": "Factor found: topical retinoids"
+    },
+    "safe_alternatives": {
+      "es": [
+        "Crema con vitamina C",
+        "Hidratante con ácido hialurónico",
+        "Bakuchiol",
+        "Crema de rosa mosqueta"
+      ],
+      "en": [
+        "Vitamin C cream",
+        "Hyaluronic acid moisturiser",
+        "Bakuchiol",
+        "Rosehip cream"
+      ]
+    },
+    "education": {
+      "es": "Los retinoides (retinol, retinal, tretinoína) son derivados de la vitamina A. Por vía oral son claramente teratogénicos; en crema la absorción es pequeña, pero como existen alternativas seguras (vitamina C, hialurónico, bakuchiol), la recomendación general es no usarlos durante el embarazo.",
+      "en": "Retinoids (retinol, retinal, tretinoin) are vitamin A derivatives. Taken orally they clearly cause birth defects; in creams absorption is small, but since safe alternatives exist (vitamin C, hyaluronic, bakuchiol), the general advice is not to use them during pregnancy."
+    },
+    "source_org": "AEMPS",
+    "source_url": "https://www.aemps.gob.es/",
+    "active": true
+  },
+  {
+    "id": 2002,
+    "version": 1,
+    "target_type": "attribute",
+    "target_id": "acido_salicilico_alto",
+    "condition": {
+      "attribute": "acido_salicilico_alto",
+      "operator": "==",
+      "value": true
+    },
+    "verdict": "caution",
+    "explanation": {
+      "es": "Ácido salicílico en concentración alta: úsalo puntual y en zonas pequeñas.",
+      "en": "High-strength salicylic acid: use sparingly and on small areas."
+    },
+    "caution_note": {
+      "es": "En limpiadores y a baja concentración (<2%) se considera aceptable",
+      "en": "In rinse-off products at low strength (<2%) it's considered acceptable"
+    },
+    "factor_label": {
+      "es": "Factor detectado: salicilatos en alta concentración",
+      "en": "Factor found: high-strength salicylates"
+    },
+    "safe_alternatives": {
+      "es": [
+        "Limpiador suave",
+        "Ácido láctico",
+        "Niacinamida",
+        "Ácido azelaico"
+      ],
+      "en": [
+        "Gentle cleanser",
+        "Lactic acid",
+        "Niacinamide",
+        "Azelaic acid"
+      ]
+    },
+    "education": {
+      "es": "El ácido salicílico es pariente de la aspirina. En peelings o tratamientos concentrados que se dejan puestos, la absorción puede ser relevante; en un limpiador que se aclara, apenas. La dosis y el tiempo de contacto marcan la diferencia.",
+      "en": "Salicylic acid is related to aspirin. In peels or leave-on concentrated treatments absorption can matter; in a rinse-off cleanser, barely. Dose and contact time make the difference."
+    },
+    "source_org": "ACOG",
+    "source_url": "https://www.acog.org/",
+    "active": true
+  },
+  {
+    "id": 2003,
+    "version": 1,
+    "target_type": "attribute",
+    "target_id": "filtro_mineral",
+    "condition": {
+      "attribute": "filtro_mineral",
+      "operator": "==",
+      "value": true
+    },
+    "verdict": "safe",
+    "explanation": {
+      "es": "Protector solar mineral: seguro y muy recomendable en el embarazo.",
+      "en": "Mineral sunscreen: safe and highly recommended in pregnancy."
+    },
+    "education": {
+      "es": "Los filtros minerales (óxido de zinc, dióxido de titanio) actúan como espejo sobre la piel, sin absorberse. En el embarazo el sol mancha más (melasma), así que el protector no solo es seguro: es especialmente buena idea.",
+      "en": "Mineral filters (zinc oxide, titanium dioxide) sit on the skin like a mirror, without being absorbed. Pregnancy skin marks more easily (melasma), so sunscreen isn't just safe: it's an especially good idea."
+    },
+    "source_org": "AEMPS",
+    "source_url": "https://www.aemps.gob.es/",
+    "active": true
+  },
+  {
+    "id": 2004,
+    "version": 1,
+    "target_type": "attribute",
+    "target_id": "tinte_permanente",
+    "condition": {
+      "attribute": "tinte_permanente",
+      "operator": "==",
+      "value": true
+    },
+    "verdict": "caution",
+    "explanation": {
+      "es": "Tinte permanente: mejor a partir del segundo trimestre y en sitio ventilado.",
+      "en": "Permanent dye: better from the second trimester, in a ventilated space."
+    },
+    "caution_note": {
+      "es": "Semipermanentes y mechas (sin tocar cuero cabelludo) reducen la exposición",
+      "en": "Semi-permanent dyes and highlights (off the scalp) reduce exposure"
+    },
+    "factor_label": {
+      "es": "Factor detectado: aminas del tinte permanente",
+      "en": "Factor found: permanent-dye amines"
+    },
+    "safe_alternatives": {
+      "es": [
+        "Mechas o balayage",
+        "Tinte semipermanente",
+        "Henna natural"
+      ],
+      "en": [
+        "Highlights or balayage",
+        "Semi-permanent dye",
+        "Natural henna"
+      ]
+    },
+    "education": {
+      "es": "La absorción por el cuero cabelludo es mínima y los estudios no muestran daño, pero como precaución clásica se sugiere esperar al segundo trimestre. Las mechas ni siquiera tocan la piel, por eso son la opción tranquila.",
+      "en": "Scalp absorption is minimal and studies show no harm, but the classic precaution is to wait until the second trimester. Highlights never touch the skin, which is why they're the calm option."
+    },
+    "source_org": "ACOG",
+    "source_url": "https://www.acog.org/",
+    "active": true
+  }
+]
