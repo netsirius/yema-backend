@@ -7,12 +7,14 @@ significados. La app cambia MockDb por HTTP y nada más se toca.
 """
 from __future__ import annotations
 
+import hmac
 import json
 import os
 from contextlib import asynccontextmanager
 
 import psycopg
-from fastapi import FastAPI, HTTPException, Query
+from fastapi import FastAPI, HTTPException, Query, Request
+from fastapi.responses import JSONResponse
 from psycopg.rows import dict_row
 from psycopg_pool import AsyncConnectionPool
 
@@ -20,6 +22,9 @@ from . import engine
 
 DATABASE_URL = os.environ.get(
     "DATABASE_URL", "postgresql://yema:yema@localhost:5433/yema")
+# ponytail: API key compartida — sube el listón contra bots/scraping; la
+# protección "solo la app genuina" real llega con App Attest/Play Integrity.
+API_KEY = os.environ.get("API_KEY")
 
 
 @asynccontextmanager
@@ -31,6 +36,16 @@ async def lifespan(app: FastAPI):
 
 
 app = FastAPI(title="Yema API", version="0.1.0", lifespan=lifespan)
+
+
+@app.middleware("http")
+async def require_api_key(request: Request, call_next):
+    # /health queda abierto para monitorización.
+    if API_KEY and request.url.path != "/health":
+        provided = request.headers.get("x-api-key", "")
+        if not hmac.compare_digest(provided, API_KEY):
+            return JSONResponse({"detail": "invalid_api_key"}, status_code=401)
+    return await call_next(request)
 
 
 async def _rules(pool) -> list[dict]:
