@@ -604,5 +604,486 @@
     "source_org": "ACOG",
     "source_url": "https://www.acog.org/",
     "active": true
+  },
+  {
+    "id": 1050,
+    "version": 1,
+    "target_type": "category",
+    "target_id": "pescado_gran_depredador",
+    "condition": null,
+    "verdict": "avoid",
+    "explanation": {
+      "es": "Pez espada y grandes depredadores: mercurio alto — mejor después del embarazo.",
+      "en": "Swordfish and large predators: high mercury — better after pregnancy."
+    },
+    "source_org": "AESAN",
+    "source_url": "https://www.aesan.gob.es/AECOSAN/web/para_el_consumidor/ampliacion/embarazadas.htm",
+    "active": true,
+    "factor_label": {
+      "es": "Factor detectado: metilmercurio en grandes depredadores",
+      "en": "Factor found: methylmercury in large predators"
+    },
+    "safe_alternatives": {
+      "es": [
+        "Merluza",
+        "Sardinas",
+        "Salmón cocinado",
+        "Lubina"
+      ],
+      "en": [
+        "Hake",
+        "Sardines",
+        "Cooked salmon",
+        "Sea bass"
+      ]
+    },
+    "education": {
+      "es": "Los peces grandes y longevos concentran el mercurio de años de alimentación. AESAN recomienda evitarlos en embarazo y lactancia; los pescados pequeños son la alternativa segura y siguen aportando omega-3.",
+      "en": "Large, long-lived fish concentrate years of dietary mercury. Food agencies advise avoiding them in pregnancy; small fish are the safe alternative and still provide omega-3."
+    }
+  },
+  {
+    "id": 1051,
+    "version": 1,
+    "target_type": "category",
+    "target_id": "marisco_crudo",
+    "condition": null,
+    "verdict": "avoid",
+    "explanation": {
+      "es": "Marisco crudo (ostras, almejas crudas) — mejor bien cocinado.",
+      "en": "Raw shellfish (oysters, raw clams) — better well cooked."
+    },
+    "source_org": "AESAN",
+    "source_url": "https://www.aesan.gob.es/AECOSAN/web/para_el_consumidor/ampliacion/embarazadas.htm",
+    "active": true,
+    "factor_label": {
+      "es": "Factor detectado: norovirus y vibrios en marisco crudo",
+      "en": "Factor found: norovirus and vibrio in raw shellfish"
+    },
+    "safe_alternatives": {
+      "es": [
+        "Mejillones al vapor",
+        "Gambas cocidas",
+        "Almejas a la marinera"
+      ],
+      "en": [
+        "Steamed mussels",
+        "Cooked prawns",
+        "Cooked clams"
+      ]
+    }
+  },
+  {
+    "id": 1052,
+    "version": 1,
+    "target_type": "category",
+    "target_id": "leche_cruda",
+    "condition": null,
+    "verdict": "avoid",
+    "explanation": {
+      "es": "Leche cruda sin pasteurizar — evítala durante el embarazo.",
+      "en": "Raw unpasteurised milk — avoid during pregnancy."
+    },
+    "source_org": "AESAN",
+    "source_url": "https://www.aesan.gob.es/AECOSAN/web/para_el_consumidor/ampliacion/embarazadas.htm",
+    "active": true,
+    "factor_label": {
+      "es": "Factor detectado: listeria y otros patógenos en leche cruda",
+      "en": "Factor found: listeria and other pathogens in raw milk"
+    }
+  },
+  {
+    "id": 1053,
+    "version": 1,
+    "target_type": "category",
+    "target_id": "brotes_crudos",
+    "condition": null,
+    "verdict": "avoid",
+    "explanation": {
+      "es": "Brotes crudos (soja, alfalfa): mejor evitarlos o cocinarlos.",
+      "en": "Raw sprouts (soy, alfalfa): better avoided or cooked."
+    },
+    "source_org": "AESAN",
+    "source_url": "https://www.aesan.gob.es/AECOSAN/web/para_el_consumidor/ampliacion/embarazadas.htm",
+    "active": true,
+    "factor_label": {
+      "es": "Factor detectado: E. coli y salmonela en brotes crudos",
+      "en": "Factor found: E. coli and salmonella in raw sprouts"
+    },
+    "education": {
+      "es": "Las semillas germinan en calor y humedad — las mismas condiciones que les gustan a las bacterias, que quedan dentro del brote y no se van lavando. Cocinados son seguros.",
+      "en": "Seeds sprout in warmth and moisture — the same conditions bacteria love, and they end up inside the sprout where washing can't reach. Cooked, they're safe."
+    }
+  },
+  {
+    "id": 1054,
+    "version": 1,
+    "target_type": "category",
+    "target_id": "zumos_sin_pasteurizar",
+    "condition": null,
+    "verdict": "caution",
+    "explanation": {
+      "es": "Zumo sin pasteurizar: mejor recién exprimido en casa y al momento.",
+      "en": "Unpasteurised juice: best freshly squeezed at home and drunk right away."
+    },
+    "source_org": "AESAN",
+    "source_url": "https://www.aesan.gob.es/AECOSAN/web/para_el_consumidor/ampliacion/embarazadas.htm",
+    "active": true,
+    "caution_note": {
+      "es": "Los zumos envasados pasteurizados son seguros",
+      "en": "Pasteurised packaged juices are safe"
+    }
+  },
+  {
+    "id": 1055,
+    "version": 1,
+    "target_type": "category",
+    "target_id": "ensaladas_preparadas",
+    "condition": null,
+    "verdict": "caution",
+    "explanation": {
+      "es": "Lista para consumir: tómala recién abierta y bien refrigerada.",
+      "en": "Ready-to-eat: have it freshly opened and well chilled."
+    },
+    "source_org": "AESAN",
+    "source_url": "https://www.aesan.gob.es/AECOSAN/web/para_el_consumidor/ampliacion/embarazadas.htm",
+    "active": true,
+    "caution_note": {
+      "es": "La listeria crece en frío: no dejes pasar días tras abrir",
+      "en": "Listeria grows in the fridge: don't let it sit days after opening"
+    },
+    "education": {
+      "es": "Los alimentos listos para consumir que pasan tiempo refrigerados son el hábitat clásico de la listeria, que —a diferencia de casi todas las bacterias— sigue creciendo en la nevera. Recién preparado o recién abierto, el riesgo es mínimo.",
+      "en": "Ready-to-eat foods that sit chilled are listeria's classic habitat — unlike most bacteria, it keeps growing in the fridge. Freshly made or freshly opened, the risk is minimal."
+    }
+  },
+  {
+    "id": 1056,
+    "version": 1,
+    "target_type": "category",
+    "target_id": "listos_para_consumo",
+    "condition": null,
+    "verdict": "caution",
+    "explanation": {
+      "es": "Listo para consumir: mejor recién abierto, o caliéntalo bien.",
+      "en": "Ready-to-eat: best freshly opened, or heat it through."
+    },
+    "source_org": "AESAN",
+    "source_url": "https://www.aesan.gob.es/AECOSAN/web/para_el_consumidor/ampliacion/embarazadas.htm",
+    "active": true,
+    "caution_note": {
+      "es": "Calentar a más de 75 °C elimina la listeria",
+      "en": "Heating above 75 °C kills listeria"
+    }
+  },
+  {
+    "id": 1057,
+    "version": 1,
+    "target_type": "category",
+    "target_id": "huevo_crudo_cat",
+    "condition": null,
+    "verdict": "avoid",
+    "explanation": {
+      "es": "Huevo crudo — cocínalo por completo.",
+      "en": "Raw egg — cook it through."
+    },
+    "source_org": "AESAN",
+    "source_url": "https://www.aesan.gob.es/AECOSAN/web/para_el_consumidor/ampliacion/embarazadas.htm",
+    "active": true,
+    "factor_label": {
+      "es": "Factor detectado: salmonela en huevo crudo",
+      "en": "Factor found: salmonella in raw egg"
+    }
+  },
+  {
+    "id": 1058,
+    "version": 1,
+    "target_type": "category",
+    "target_id": "postres_huevo_crudo",
+    "condition": null,
+    "verdict": "caution",
+    "explanation": {
+      "es": "Postres con huevo crudo (tiramisú, mousse): solo si son industriales (huevo pasteurizado).",
+      "en": "Raw-egg desserts (tiramisu, mousse): only if industrial (pasteurised egg)."
+    },
+    "source_org": "AESAN",
+    "source_url": "https://www.aesan.gob.es/AECOSAN/web/para_el_consumidor/ampliacion/embarazadas.htm",
+    "active": true,
+    "caution_note": {
+      "es": "Los industriales usan huevo pasteurizado: seguros",
+      "en": "Industrial versions use pasteurised egg: safe"
+    }
+  },
+  {
+    "id": 1059,
+    "version": 1,
+    "target_type": "category",
+    "target_id": "masas_crudas",
+    "condition": null,
+    "verdict": "avoid",
+    "explanation": {
+      "es": "Masa cruda (de galletas, bizcocho): espera a que salga del horno.",
+      "en": "Raw dough (cookie, cake): wait until it's out of the oven."
+    },
+    "source_org": "AESAN",
+    "source_url": "https://www.aesan.gob.es/AECOSAN/web/para_el_consumidor/ampliacion/embarazadas.htm",
+    "active": true,
+    "factor_label": {
+      "es": "Factor detectado: huevo crudo y harina sin tratar",
+      "en": "Factor found: raw egg and untreated flour"
+    }
+  },
+  {
+    "id": 1060,
+    "version": 1,
+    "target_type": "category",
+    "target_id": "salsas_huevo",
+    "condition": {
+      "attribute": "pasteurizado",
+      "operator": "==",
+      "value": false,
+      "if_unknown": "assume_worst"
+    },
+    "verdict": "caution",
+    "explanation": {
+      "es": "Salsas con huevo: la industrial (pasteurizada) es segura; la casera, mejor no.",
+      "en": "Egg-based sauces: industrial (pasteurised) is safe; homemade, better not."
+    },
+    "source_org": "AESAN",
+    "source_url": "https://www.aesan.gob.es/AECOSAN/web/para_el_consumidor/ampliacion/embarazadas.htm",
+    "active": true,
+    "caution_note": {
+      "es": "Seguro si es industrial — el huevo va pasteurizado",
+      "en": "Safe if industrial — the egg is pasteurised"
+    }
+  },
+  {
+    "id": 1061,
+    "version": 1,
+    "target_type": "category",
+    "target_id": "pates_higado",
+    "condition": null,
+    "verdict": "avoid",
+    "explanation": {
+      "es": "Paté de hígado: exceso de vitamina A — mejor déjalo para después.",
+      "en": "Liver pâté: excess vitamin A — better leave it for later."
+    },
+    "source_org": "AESAN",
+    "source_url": "https://www.aesan.gob.es/AECOSAN/web/para_el_consumidor/ampliacion/embarazadas.htm",
+    "active": true,
+    "factor_label": {
+      "es": "Factor detectado: retinol (vitamina A) en exceso",
+      "en": "Factor found: excess retinol (vitamin A)"
+    },
+    "education": {
+      "es": "El hígado concentra vitamina A en forma de retinol, y en exceso es teratogénico (puede afectar al desarrollo). No es una cuestión de gérmenes sino de dosis: una ración de hígado supera varias veces el máximo diario recomendado.",
+      "en": "Liver concentrates vitamin A as retinol, and in excess it's teratogenic. It's not about germs but dose: one serving of liver exceeds the daily maximum several times over."
+    }
+  },
+  {
+    "id": 1062,
+    "version": 1,
+    "target_type": "category",
+    "target_id": "higado",
+    "condition": null,
+    "verdict": "avoid",
+    "explanation": {
+      "es": "Hígado: demasiada vitamina A para el embarazo.",
+      "en": "Liver: too much vitamin A for pregnancy."
+    },
+    "source_org": "AESAN",
+    "source_url": "https://www.aesan.gob.es/AECOSAN/web/para_el_consumidor/ampliacion/embarazadas.htm",
+    "active": true,
+    "factor_label": {
+      "es": "Factor detectado: retinol (vitamina A) en exceso",
+      "en": "Factor found: excess retinol (vitamin A)"
+    }
+  },
+  {
+    "id": 1063,
+    "version": 1,
+    "target_type": "category",
+    "target_id": "pates",
+    "condition": null,
+    "verdict": "caution",
+    "explanation": {
+      "es": "Paté refrigerado: riesgo de listeria — en conserva (lata) es seguro.",
+      "en": "Chilled pâté: listeria risk — canned is safe."
+    },
+    "source_org": "AESAN",
+    "source_url": "https://www.aesan.gob.es/AECOSAN/web/para_el_consumidor/ampliacion/embarazadas.htm",
+    "active": true,
+    "caution_note": {
+      "es": "El paté en lata (esterilizado) no tiene este riesgo",
+      "en": "Canned (sterilised) pâté doesn't carry this risk"
+    }
+  },
+  {
+    "id": 1064,
+    "version": 1,
+    "target_type": "category",
+    "target_id": "suplementos_vitamina_a",
+    "condition": null,
+    "verdict": "avoid",
+    "explanation": {
+      "es": "Suplemento con vitamina A (retinol): consúltalo antes con tu matrona.",
+      "en": "Vitamin A (retinol) supplement: check with your midwife first."
+    },
+    "source_org": "AEMPS",
+    "source_url": "https://www.aemps.gob.es/",
+    "active": true
+  },
+  {
+    "id": 1065,
+    "version": 1,
+    "target_type": "category",
+    "target_id": "bebidas_energeticas",
+    "condition": null,
+    "verdict": "avoid",
+    "explanation": {
+      "es": "Bebida energética: demasiada cafeína concentrada — mejor evitarla.",
+      "en": "Energy drink: too much concentrated caffeine — better avoided."
+    },
+    "source_org": "EFSA",
+    "source_url": "https://www.efsa.europa.eu/en/efsajournal/pub/4102",
+    "active": true,
+    "factor_label": {
+      "es": "Factor detectado: cafeína alta + otros estimulantes",
+      "en": "Factor found: high caffeine + other stimulants"
+    }
+  },
+  {
+    "id": 1066,
+    "version": 1,
+    "target_type": "category",
+    "target_id": "kombucha",
+    "condition": null,
+    "verdict": "caution",
+    "explanation": {
+      "es": "Kombucha: puede llevar alcohol residual y no estar pasteurizada.",
+      "en": "Kombucha: may carry residual alcohol and be unpasteurised."
+    },
+    "source_org": "AESAN",
+    "source_url": "https://www.aesan.gob.es/AECOSAN/web/para_el_consumidor/ampliacion/embarazadas.htm",
+    "active": true,
+    "caution_note": {
+      "es": "Pasteurizada y sin alcohol declarado, es aceptable",
+      "en": "Pasteurised with no declared alcohol, it's acceptable"
+    }
+  },
+  {
+    "id": 1067,
+    "version": 1,
+    "target_type": "category",
+    "target_id": "cerveza_sin",
+    "condition": null,
+    "verdict": "caution",
+    "explanation": {
+      "es": "«Sin alcohol» puede llevar hasta 0,9%. Busca específicamente 0,0.",
+      "en": "'Alcohol-free' can carry up to 0.9%. Look specifically for 0.0."
+    },
+    "source_org": "AESAN",
+    "source_url": "https://www.aesan.gob.es/AECOSAN/web/para_el_consumidor/ampliacion/embarazadas.htm",
+    "active": true,
+    "caution_note": {
+      "es": "Las 0,0 verificadas no tienen alcohol detectable",
+      "en": "Verified 0.0 drinks have no detectable alcohol"
+    }
+  },
+  {
+    "id": 1068,
+    "version": 1,
+    "target_type": "category",
+    "target_id": "verduras_frescas",
+    "condition": null,
+    "verdict": "safe",
+    "explanation": {
+      "es": "Verdura fresca: segura bien lavada.",
+      "en": "Fresh vegetables: safe when well washed."
+    },
+    "source_org": "AESAN",
+    "source_url": "https://www.aesan.gob.es/AECOSAN/web/para_el_consumidor/ampliacion/embarazadas.htm",
+    "active": true,
+    "education": {
+      "es": "El toxoplasma puede llegar en restos de tierra. Lavar bien bajo el grifo (y pelar cuando se pueda) elimina el riesgo — no hace falta desinfectante para consumo en casa.",
+      "en": "Toxoplasma can hitch a ride on soil traces. Washing well under running water (and peeling when possible) removes the risk."
+    }
+  },
+  {
+    "id": 1069,
+    "version": 1,
+    "target_type": "category",
+    "target_id": "frutas_frescas",
+    "condition": null,
+    "verdict": "safe",
+    "explanation": {
+      "es": "Fruta fresca: segura bien lavada o pelada.",
+      "en": "Fresh fruit: safe when washed or peeled."
+    },
+    "source_org": "AESAN",
+    "source_url": "https://www.aesan.gob.es/AECOSAN/web/para_el_consumidor/ampliacion/embarazadas.htm",
+    "active": true
+  },
+  {
+    "id": 1070,
+    "version": 1,
+    "target_type": "category",
+    "target_id": "quesos_frescos",
+    "condition": {
+      "attribute": "pasteurizado",
+      "operator": "==",
+      "value": false,
+      "if_unknown": "assume_worst"
+    },
+    "verdict": "caution",
+    "explanation": {
+      "es": "Queso fresco: seguro si es de leche pasteurizada — compruébalo.",
+      "en": "Fresh cheese: safe if made with pasteurised milk — check the label."
+    },
+    "source_org": "AESAN",
+    "source_url": "https://www.aesan.gob.es/AECOSAN/web/para_el_consumidor/ampliacion/embarazadas.htm",
+    "active": true,
+    "caution_note": {
+      "es": "Seguro si está pasteurizado — compruébalo en la etiqueta",
+      "en": "Safe if pasteurised — check the label"
+    }
+  },
+  {
+    "id": 1071,
+    "version": 1,
+    "target_type": "category",
+    "target_id": "quesos_frescos",
+    "condition": {
+      "attribute": "pasteurizado",
+      "operator": "==",
+      "value": true
+    },
+    "verdict": "safe",
+    "explanation": {
+      "es": "Queso fresco pasteurizado: seguro.",
+      "en": "Pasteurised fresh cheese: safe."
+    },
+    "source_org": "AESAN",
+    "source_url": "https://www.aesan.gob.es/AECOSAN/web/para_el_consumidor/ampliacion/embarazadas.htm",
+    "active": true
+  },
+  {
+    "id": 1072,
+    "version": 1,
+    "target_type": "category",
+    "target_id": "fiambres_cocidos",
+    "condition": null,
+    "verdict": "safe",
+    "explanation": {
+      "es": "Fiambre cocido (jamón york, pavo): seguro recién abierto.",
+      "en": "Cooked deli meat (ham, turkey): safe freshly opened."
+    },
+    "source_org": "AESAN",
+    "source_url": "https://www.aesan.gob.es/AECOSAN/web/para_el_consumidor/ampliacion/embarazadas.htm",
+    "active": true,
+    "education": {
+      "es": "El cocido elimina el toxoplasma del curado. El único cuidado es el de todo listo-para-consumir: consúmelo en pocos días una vez abierto.",
+      "en": "Cooking removes the toxoplasma risk of cured meat. The only care is the usual ready-to-eat one: eat within a few days of opening."
+    }
   }
 ]

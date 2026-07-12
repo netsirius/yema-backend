@@ -1,0 +1,36 @@
+name: science-watch
+on:
+  schedule:
+    - cron: "0 7 * * 1" # lunes 07:00 UTC, semanal
+  workflow_dispatch: {} # lanzable a mano desde la pestaña Actions
+
+permissions:
+  issues: write
+  contents: read
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Generar digest
+        env:
+          # Opcional: con el secret, añade análisis de relevancia con IA.
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          FLAGS="--days 7"
+          [ -n "$ANTHROPIC_API_KEY" ] && FLAGS="$FLAGS --summarize"
+          python tools/science_watch.py $FLAGS > digest.md
+          cat digest.md
+      - name: Abrir issue para el panel clínico
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue create \
+            --title "🔬 Vigilancia científica · $(date +%Y-%m-%d)" \
+            --body-file digest.md \
+            --label "science-watch" \
+            --repo "$GITHUB_REPOSITORY"
