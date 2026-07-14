@@ -24,7 +24,13 @@ DATABASE_URL = os.environ.get(
     "DATABASE_URL", "postgresql://yema:yema@localhost:5433/yema")
 # ponytail: API key compartida — sube el listón contra bots/scraping; la
 # protección "solo la app genuina" real llega con App Attest/Play Integrity.
-API_KEY = os.environ.get("API_KEY")
+# Acepta VARIAS claves separadas por comas para rotar sin romper las apps
+# ya instaladas: API_KEY="nueva,antigua" durante la ventana de rotación.
+API_KEYS = [k.strip() for k in os.environ.get("API_KEY", "").split(",") if k.strip()]
+
+
+def _valid_key(provided: str) -> bool:
+    return any(hmac.compare_digest(provided, k) for k in API_KEYS)
 
 
 @asynccontextmanager
@@ -41,9 +47,8 @@ app = FastAPI(title="Yema API", version="0.1.0", lifespan=lifespan)
 @app.middleware("http")
 async def require_api_key(request: Request, call_next):
     # /health queda abierto para monitorización.
-    if API_KEY and request.url.path != "/health":
-        provided = request.headers.get("x-api-key", "")
-        if not hmac.compare_digest(provided, API_KEY):
+    if API_KEYS and request.url.path != "/health":
+        if not _valid_key(request.headers.get("x-api-key", "")):
             return JSONResponse({"detail": "invalid_api_key"}, status_code=401)
     return await call_next(request)
 
