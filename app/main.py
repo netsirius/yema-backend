@@ -85,7 +85,7 @@ async def product_verdict(ean: str):
         "product": {
             "ean": row["ean"], "name": row["name"], "brand": row["brand"],
             "category": row["category"], "product_type": row["product_type"],
-            "confidence": row["confidence"],
+            "confidence": row["confidence"], "image_url": row.get("image_url"),
         },
         "verdict": verdict,
     }

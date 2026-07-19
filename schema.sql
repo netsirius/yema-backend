@@ -8,6 +8,7 @@ CREATE TABLE IF NOT EXISTS products (
   category        TEXT,
   ingredients_raw TEXT,
   attributes      JSONB NOT NULL DEFAULT '{}',
+  image_url       TEXT,
   source          TEXT NOT NULL,              -- 'off' | 'crowd' | 'brand'
   confidence      REAL NOT NULL,
   product_type    TEXT NOT NULL DEFAULT 'food', -- 'food' | 'cosmetic'
